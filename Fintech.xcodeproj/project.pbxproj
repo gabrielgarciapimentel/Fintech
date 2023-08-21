@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C928B9152A929E0000694A95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928B9142A929E0000694A95 /* AppDelegate.swift */; };
+		C928B9192A929E0000694A95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928B9182A929E0000694A95 /* ViewController.swift */; };
+		C928B91E2A929E0100694A95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C928B91D2A929E0100694A95 /* Assets.xcassets */; };
+		C928B9212A929E0100694A95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C928B91F2A929E0100694A95 /* LaunchScreen.storyboard */; };
+		C928B92C2A92A16500694A95 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928B92B2A92A16500694A95 /* HomeViewController.swift */; };
+		C928B9302A92A27600694A95 /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928B92F2A92A27600694A95 /* ViewCodeProtocol.swift */; };
+		C928B9342A92A60200694A95 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928B9332A92A60200694A95 /* TabbarViewController.swift */; };
+		C928B9372A92A8BC00694A95 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928B9362A92A8BC00694A95 /* UIViewController+Utils.swift */; };
+		C928B93A2A92AACD00694A95 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928B9392A92AACD00694A95 /* TransactionViewController.swift */; };
+		C928B93E2A92C0B300694A95 /* TabbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928B93D2A92C0B300694A95 /* TabbarItem.swift */; };
+		C928B9402A92CED400694A95 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928B93F2A92CED400694A95 /* TabbarView.swift */; };
+		C928B9422A92E43300694A95 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928B9412A92E43300694A95 /* TabbarController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C928B9112A929E0000694A95 /* Fintech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fintech.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C928B9142A929E0000694A95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C928B9182A929E0000694A95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C928B91D2A929E0100694A95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C928B9202A929E0100694A95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C928B9222A929E0100694A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C928B92B2A92A16500694A95 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C928B92F2A92A27600694A95 /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
+		C928B9332A92A60200694A95 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		C928B9362A92A8BC00694A95 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		C928B9392A92AACD00694A95 /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
+		C928B93D2A92C0B300694A95 /* TabbarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarItem.swift; sourceTree = "<group>"; };
+		C928B93F2A92CED400694A95 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		C928B9412A92E43300694A95 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C928B90E2A929E0000694A95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C928B9082A929E0000694A95 = {
+			isa = PBXGroup;
+			children = (
+				C928B9132A929E0000694A95 /* Fintech */,
+				C928B9122A929E0000694A95 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C928B9122A929E0000694A95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C928B9112A929E0000694A95 /* Fintech.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C928B9132A929E0000694A95 /* Fintech */ = {
+			isa = PBXGroup;
+			children = (
+				C928B9352A92A8A200694A95 /* Utils */,
+				C928B9312A92A5AB00694A95 /* Navigation */,
+				C928B92D2A92A20900694A95 /* Factories */,
+				C928B9292A92A13A00694A95 /* Pages */,
+				C928B9282A929E7C00694A95 /* Files */,
+				C928B9142A929E0000694A95 /* AppDelegate.swift */,
+				C928B9182A929E0000694A95 /* ViewController.swift */,
+			);
+			path = Fintech;
+			sourceTree = "<group>";
+		};
+		C928B9282A929E7C00694A95 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				C928B91D2A929E0100694A95 /* Assets.xcassets */,
+				C928B91F2A929E0100694A95 /* LaunchScreen.storyboard */,
+				C928B9222A929E0100694A95 /* Info.plist */,
+			);
+			name = Files;
+			sourceTree = "<group>";
+		};
+		C928B9292A92A13A00694A95 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				C928B9382A92AAB200694A95 /* Transaction */,
+				C928B92A2A92A14D00694A95 /* Home */,
+			);
+			name = Pages;
+			sourceTree = "<group>";
+		};
+		C928B92A2A92A14D00694A95 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C928B92B2A92A16500694A95 /* HomeViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		C928B92D2A92A20900694A95 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				C928B92F2A92A27600694A95 /* ViewCodeProtocol.swift */,
+			);
+			name = Factories;
+			sourceTree = "<group>";
+		};
+		C928B9312A92A5AB00694A95 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				C928B9322A92A5E000694A95 /* Tabbar */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		C928B9322A92A5E000694A95 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				C928B9332A92A60200694A95 /* TabbarViewController.swift */,
+				C928B93D2A92C0B300694A95 /* TabbarItem.swift */,
+				C928B93F2A92CED400694A95 /* TabbarView.swift */,
+				C928B9412A92E43300694A95 /* TabbarController.swift */,
+			);
+			name = Tabbar;
+			sourceTree = "<group>";
+		};
+		C928B9352A92A8A200694A95 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C928B9362A92A8BC00694A95 /* UIViewController+Utils.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		C928B9382A92AAB200694A95 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				C928B9392A92AACD00694A95 /* TransactionViewController.swift */,
+			);
+			name = Transaction;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C928B9102A929E0000694A95 /* Fintech */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C928B9252A929E0100694A95 /* Build configuration list for PBXNativeTarget "Fintech" */;
+			buildPhases = (
+				C928B90D2A929E0000694A95 /* Sources */,
+				C928B90E2A929E0000694A95 /* Frameworks */,
+				C928B90F2A929E0000694A95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fintech;
+			productName = Fintech;
+			productReference = C928B9112A929E0000694A95 /* Fintech.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C928B9092A929E0000694A95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					C928B9102A929E0000694A95 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C928B90C2A929E0000694A95 /* Build configuration list for PBXProject "Fintech" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C928B9082A929E0000694A95;
+			productRefGroup = C928B9122A929E0000694A95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C928B9102A929E0000694A95 /* Fintech */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C928B90F2A929E0000694A95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C928B9212A929E0100694A95 /* LaunchScreen.storyboard in Resources */,
+				C928B91E2A929E0100694A95 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C928B90D2A929E0000694A95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C928B9192A929E0000694A95 /* ViewController.swift in Sources */,
+				C928B93A2A92AACD00694A95 /* TransactionViewController.swift in Sources */,
+				C928B9152A929E0000694A95 /* AppDelegate.swift in Sources */,
+				C928B9422A92E43300694A95 /* TabbarController.swift in Sources */,
+				C928B9372A92A8BC00694A95 /* UIViewController+Utils.swift in Sources */,
+				C928B92C2A92A16500694A95 /* HomeViewController.swift in Sources */,
+				C928B9342A92A60200694A95 /* TabbarViewController.swift in Sources */,
+				C928B93E2A92C0B300694A95 /* TabbarItem.swift in Sources */,
+				C928B9402A92CED400694A95 /* TabbarView.swift in Sources */,
+				C928B9302A92A27600694A95 /* ViewCodeProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C928B91F2A929E0100694A95 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C928B9202A929E0100694A95 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C928B9232A929E0100694A95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C928B9242A929E0100694A95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C928B9262A929E0100694A95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YVA44JVTUU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fintech/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asgadian.Fintech;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C928B9272A929E0100694A95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YVA44JVTUU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fintech/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asgadian.Fintech;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C928B90C2A929E0000694A95 /* Build configuration list for PBXProject "Fintech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C928B9232A929E0100694A95 /* Debug */,
+				C928B9242A929E0100694A95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C928B9252A929E0100694A95 /* Build configuration list for PBXNativeTarget "Fintech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C928B9262A929E0100694A95 /* Debug */,
+				C928B9272A929E0100694A95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C928B9092A929E0000694A95 /* Project object */;
+}
