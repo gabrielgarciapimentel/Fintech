@@ -17,6 +17,7 @@
 		C90E964D2A93BCE500998E37 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C90E96452A93BCE500998E37 /* Poppins-Bold.ttf */; };
 		C90E964E2A93BCE500998E37 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C90E96462A93BCE500998E37 /* Poppins-Medium.ttf */; };
 		C90E964F2A93BCE500998E37 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C90E96472A93BCE500998E37 /* Poppins-SemiBold.ttf */; };
+		C90E96512A93E10000998E37 /* UIView+Glow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90E96502A93E10000998E37 /* UIView+Glow.swift */; };
 		C928B9152A929E0000694A95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928B9142A929E0000694A95 /* AppDelegate.swift */; };
 		C928B9192A929E0000694A95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928B9182A929E0000694A95 /* ViewController.swift */; };
 		C928B91E2A929E0100694A95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C928B91D2A929E0100694A95 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		C90E96452A93BCE500998E37 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		C90E96462A93BCE500998E37 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		C90E96472A93BCE500998E37 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		C90E96502A93E10000998E37 /* UIView+Glow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Glow.swift"; sourceTree = "<group>"; };
 		C928B9112A929E0000694A95 /* Fintech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fintech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C928B9142A929E0000694A95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C928B9182A929E0000694A95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				C928B9362A92A8BC00694A95 /* UIViewController+Utils.swift */,
+				C90E96502A93E10000998E37 /* UIView+Glow.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				C928B92C2A92A16500694A95 /* HomeViewController.swift in Sources */,
 				C928B9342A92A60200694A95 /* TabbarViewController.swift in Sources */,
 				C90E963A2A93AEB700998E37 /* HeaderView.swift in Sources */,
+				C90E96512A93E10000998E37 /* UIView+Glow.swift in Sources */,
 				C928B93E2A92C0B300694A95 /* TabbarItem.swift in Sources */,
 				C928B9402A92CED400694A95 /* TabbarView.swift in Sources */,
 				C928B9302A92A27600694A95 /* ViewCodeProtocol.swift in Sources */,
