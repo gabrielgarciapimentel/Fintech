@@ -26,14 +26,14 @@ extension TabbarViewController: ViewCodeProtocol {
         let walletTab = TabbarItem(icon: UIImage(named: "wallet.icon") ?? UIImage(systemName: "")!, index: 4)
         
         
-        let homeVC = HomeViewController()
-        let transactionVC = TransactionViewController()
-        let moreVC = TransactionViewController()
-        let withdrawVC = TransactionViewController()
-        let walletTabVC = TransactionViewController()
+        let homeNC = UINavigationController(rootViewController: HomeViewController())
+        let transactionNC = UINavigationController(rootViewController: TransactionViewController())
+        let moreNC = UINavigationController(rootViewController: HomeViewController())
+        let withdrawNC = UINavigationController(rootViewController: TransactionViewController())
+        let walletTabNC = UINavigationController(rootViewController: HomeViewController())
         
         setTabBar(items: [homeTab, transactionTab, moreTab, withdrawTab, walletTab])
-        viewControllers = [homeVC, transactionVC, moreVC, withdrawVC, walletTabVC]
+        viewControllers = [homeNC, transactionNC, moreNC, withdrawNC, walletTabNC]
     }
     
     func setupConstraints() {
