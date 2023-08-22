@@ -30,6 +30,7 @@
 		C928B93E2A92C0B300694A95 /* TabbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928B93D2A92C0B300694A95 /* TabbarItem.swift */; };
 		C928B9402A92CED400694A95 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928B93F2A92CED400694A95 /* TabbarView.swift */; };
 		C928B9422A92E43300694A95 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928B9412A92E43300694A95 /* TabbarController.swift */; };
+		C93B841F2A952DF000D82E31 /* StockCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93B841E2A952DF000D82E31 /* StockCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		C928B93D2A92C0B300694A95 /* TabbarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarItem.swift; sourceTree = "<group>"; };
 		C928B93F2A92CED400694A95 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		C928B9412A92E43300694A95 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		C93B841E2A952DF000D82E31 /* StockCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		C90E963B2A93AF9B00998E37 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C93B841D2A952DD700D82E31 /* StockCard */,
 				C90E96382A93AEAC00998E37 /* Header */,
 			);
 			name = Components;
@@ -214,6 +217,14 @@
 			name = Transaction;
 			sourceTree = "<group>";
 		};
+		C93B841D2A952DD700D82E31 /* StockCard */ = {
+			isa = PBXGroup;
+			children = (
+				C93B841E2A952DF000D82E31 /* StockCardView.swift */,
+			);
+			name = StockCard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -299,6 +310,7 @@
 				C928B9422A92E43300694A95 /* TabbarController.swift in Sources */,
 				C928B9372A92A8BC00694A95 /* UIViewController+Utils.swift in Sources */,
 				C928B92C2A92A16500694A95 /* HomeViewController.swift in Sources */,
+				C93B841F2A952DF000D82E31 /* StockCardView.swift in Sources */,
 				C928B9342A92A60200694A95 /* TabbarViewController.swift in Sources */,
 				C90E963A2A93AEB700998E37 /* HeaderView.swift in Sources */,
 				C90E96512A93E10000998E37 /* UIView+Glow.swift in Sources */,

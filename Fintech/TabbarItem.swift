@@ -83,5 +83,6 @@ extension TabbarItem {
         self.backgroundColor = UIColor(red: 0.30, green: 0.29, blue: 0.94, alpha: 1.00)
         self.icon.tintColor = .white
         self.layer.cornerRadius = 8
+        self.glowEffect(withColor: UIColor(red: 0.30, green: 0.29, blue: 0.94, alpha: 1.00), withEffect: .big)
     }
 }

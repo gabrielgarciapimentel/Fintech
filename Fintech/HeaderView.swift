@@ -75,8 +75,10 @@ extension HeaderView: ViewCodeProtocol {
         
         titleLabel.text = "Welcome back!"
         titleLabel.font = UIFont(name: "Poppins-Medium", size: 12)
+        titleLabel.textColor = .black
         subTitleLabel.text = "Gabriel Garcia"
         subTitleLabel.font = UIFont(name: "Poppins-Medium", size: 16)
+        subTitleLabel.textColor = .black
         
         imageIcon.layer.masksToBounds = true
         imageIcon.layer.cornerRadius = 20
