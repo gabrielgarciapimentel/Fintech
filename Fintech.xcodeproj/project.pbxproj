@@ -31,6 +31,8 @@
 		C928B9402A92CED400694A95 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928B93F2A92CED400694A95 /* TabbarView.swift */; };
 		C928B9422A92E43300694A95 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928B9412A92E43300694A95 /* TabbarController.swift */; };
 		C93B841F2A952DF000D82E31 /* StockCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93B841E2A952DF000D82E31 /* StockCardView.swift */; };
+		C93B84222A953C2600D82E31 /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93B84212A953C2600D82E31 /* RewardViewController.swift */; };
+		C93B84242A953D2C00D82E31 /* RewardItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93B84232A953D2B00D82E31 /* RewardItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		C928B93F2A92CED400694A95 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		C928B9412A92E43300694A95 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		C93B841E2A952DF000D82E31 /* StockCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCardView.swift; sourceTree = "<group>"; };
+		C93B84212A953C2600D82E31 /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
+		C93B84232A953D2B00D82E31 /* RewardItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 		C90E963B2A93AF9B00998E37 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C93B84202A953BDB00D82E31 /* Reward */,
 				C93B841D2A952DD700D82E31 /* StockCard */,
 				C90E96382A93AEAC00998E37 /* Header */,
 			);
@@ -225,6 +230,15 @@
 			name = StockCard;
 			sourceTree = "<group>";
 		};
+		C93B84202A953BDB00D82E31 /* Reward */ = {
+			isa = PBXGroup;
+			children = (
+				C93B84212A953C2600D82E31 /* RewardViewController.swift */,
+				C93B84232A953D2B00D82E31 /* RewardItemView.swift */,
+			);
+			name = Reward;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -308,6 +322,7 @@
 				C928B9152A929E0000694A95 /* AppDelegate.swift in Sources */,
 				C90E963E2A93BAAF00998E37 /* BalanceView.swift in Sources */,
 				C928B9422A92E43300694A95 /* TabbarController.swift in Sources */,
+				C93B84222A953C2600D82E31 /* RewardViewController.swift in Sources */,
 				C928B9372A92A8BC00694A95 /* UIViewController+Utils.swift in Sources */,
 				C928B92C2A92A16500694A95 /* HomeViewController.swift in Sources */,
 				C93B841F2A952DF000D82E31 /* StockCardView.swift in Sources */,
@@ -316,6 +331,7 @@
 				C90E96512A93E10000998E37 /* UIView+Glow.swift in Sources */,
 				C928B93E2A92C0B300694A95 /* TabbarItem.swift in Sources */,
 				C928B9402A92CED400694A95 /* TabbarView.swift in Sources */,
+				C93B84242A953D2C00D82E31 /* RewardItemView.swift in Sources */,
 				C928B9302A92A27600694A95 /* ViewCodeProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

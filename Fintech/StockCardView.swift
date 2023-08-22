@@ -56,8 +56,9 @@ extension StockCardView: ViewCodeProtocol {
     func configureViews() {
         image.contentMode = .scaleAspectFit
 
-        textLabel.font = UIFont(name: "Poppins-Medium", size: 14)
+        textLabel.font = UIFont(name: "Poppins-Medium", size: 12)
         textLabel.textAlignment = .center
+        textLabel.textColor = .black
         
         layer.cornerRadius = 12
     }
