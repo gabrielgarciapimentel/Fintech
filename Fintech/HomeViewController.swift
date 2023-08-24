@@ -9,18 +9,29 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    let headerView = HeaderView()
-    let horizontalStocks = UIStackView()
-    var stocks: [StockCardView] = []
+    var tableView = UITableView()
     
-    let rewardsVC = RewardViewController()
-    let scrollView = UIScrollView()
-    let stackView = UIStackView()
+    let temporaryData: [String] = ["Teste1", "Teste2", "Teste3", "Teste4", "Teste5"]
+    let headerView = HomeHeaderTableView()
+    let cellId = "cellId"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         applyViewCode()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        // setting a header height
+        guard let headerView = tableView.tableHeaderView else {return}
+        let size = headerView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
+        if headerView.frame.size.height != size.height {
+            headerView.frame.size.height = size.height
+            tableView.tableHeaderView = headerView
+            tableView.layoutIfNeeded()
+        }
     }
 }
 
@@ -28,56 +39,51 @@ class HomeViewController: UIViewController {
 // MARK: - View Code implementation
 extension HomeViewController: ViewCodeProtocol {
     func buildViewHierarchy() {
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.translatesAutoresizingMaskIntoConstraints = false
+        // Manage the table view functionalities
+        tableView.delegate = self
+        // Manage the table view data
+        tableView.dataSource = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
+        tableView.rowHeight = 150
+        tableView.tableFooterView = UIView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
         
-        stocks.append(StockCardView(textLabel: "Stock", image: "box.image", color: UIColor(red: 1.00, green: 0.58, blue: 0.34, alpha: 1.00)))
-        stocks.append(StockCardView(textLabel: "Stock", image: "safe.image", color: UIColor(red: 0.74, green: 0.74, blue: 1.00, alpha: 1.00)))
-        stocks.append(StockCardView(textLabel: "Stock", image: "pig.image", color: UIColor(red: 1.00, green: 0.58, blue: 0.34, alpha: 1.00)))
+        tableView.tableHeaderView = headerView
         
-        stocks.forEach {
-            view in
-            horizontalStocks.addArrangedSubview(view)
-        }
         
-        stackView.addArrangedSubview(horizontalStocks)
-        stackView.addArrangedSubview(rewardsVC.view)
-        
-        scrollView.addSubview(stackView)
-        view.addSubview(scrollView)
-        view.addSubview(headerView)
+        view.addSubview(tableView)
     }
     
     func setupConstraints() {
         NSLayoutConstraint.activate([
-            headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            headerView.topAnchor.constraint(equalTo: view.topAnchor),
-        ])
-        
-        
-        NSLayoutConstraint.activate([
-            scrollView.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 2),
-            scrollView.topAnchor.constraint(equalToSystemSpacingBelow: headerView.bottomAnchor, multiplier: 0),
-            view.trailingAnchor.constraint(equalToSystemSpacingAfter: scrollView.trailingAnchor, multiplier: 2),
-            scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
-        ])
-        
-        NSLayoutConstraint.activate([
-            stackView.leadingAnchor.constraint(equalToSystemSpacingAfter: scrollView.leadingAnchor, multiplier: 0),
-            stackView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 42),
-            stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-            stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
     }
     
     func configureViews() {
-        view.backgroundColor = UIColor(red: 0.05, green: 0.05, blue: 0.05, alpha: 1.00)
-        horizontalStocks.axis = .horizontal
-        horizontalStocks.distribution = .fillEqually
-        horizontalStocks.spacing = 14
+        tableView.backgroundColor = UIColor(red: 0.72, green: 0.71, blue: 0.97, alpha: 1.00)
+    }
+}
+
+
+extension HomeViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+        cell.textLabel?.text = temporaryData[indexPath.row]
         
-        stackView.axis = .vertical
-        stackView.spacing = 8
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        temporaryData.count
+    }
+}
+
+extension HomeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
     }
 }

@@ -19,7 +19,6 @@
 		C90E964F2A93BCE500998E37 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C90E96472A93BCE500998E37 /* Poppins-SemiBold.ttf */; };
 		C90E96512A93E10000998E37 /* UIView+Glow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90E96502A93E10000998E37 /* UIView+Glow.swift */; };
 		C928B9152A929E0000694A95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928B9142A929E0000694A95 /* AppDelegate.swift */; };
-		C928B9192A929E0000694A95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928B9182A929E0000694A95 /* ViewController.swift */; };
 		C928B91E2A929E0100694A95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C928B91D2A929E0100694A95 /* Assets.xcassets */; };
 		C928B9212A929E0100694A95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C928B91F2A929E0100694A95 /* LaunchScreen.storyboard */; };
 		C928B92C2A92A16500694A95 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928B92B2A92A16500694A95 /* HomeViewController.swift */; };
@@ -33,6 +32,7 @@
 		C93B841F2A952DF000D82E31 /* StockCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93B841E2A952DF000D82E31 /* StockCardView.swift */; };
 		C93B84222A953C2600D82E31 /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93B84212A953C2600D82E31 /* RewardViewController.swift */; };
 		C93B84242A953D2C00D82E31 /* RewardItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93B84232A953D2B00D82E31 /* RewardItemView.swift */; };
+		C98074D52A97C068000F7D4B /* HomeHeaderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98074D42A97C068000F7D4B /* HomeHeaderTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +49,6 @@
 		C90E96502A93E10000998E37 /* UIView+Glow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Glow.swift"; sourceTree = "<group>"; };
 		C928B9112A929E0000694A95 /* Fintech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fintech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C928B9142A929E0000694A95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C928B9182A929E0000694A95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C928B91D2A929E0100694A95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C928B9202A929E0100694A95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C928B9222A929E0100694A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		C93B841E2A952DF000D82E31 /* StockCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCardView.swift; sourceTree = "<group>"; };
 		C93B84212A953C2600D82E31 /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
 		C93B84232A953D2B00D82E31 /* RewardItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardItemView.swift; sourceTree = "<group>"; };
+		C98074D42A97C068000F7D4B /* HomeHeaderTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +146,6 @@
 				C928B9292A92A13A00694A95 /* Pages */,
 				C928B9282A929E7C00694A95 /* Files */,
 				C928B9142A929E0000694A95 /* AppDelegate.swift */,
-				C928B9182A929E0000694A95 /* ViewController.swift */,
 			);
 			path = Fintech;
 			sourceTree = "<group>";
@@ -174,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				C928B92B2A92A16500694A95 /* HomeViewController.swift */,
+				C98074D42A97C068000F7D4B /* HomeHeaderTableView.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -317,7 +317,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C928B9192A929E0000694A95 /* ViewController.swift in Sources */,
 				C928B93A2A92AACD00694A95 /* TransactionViewController.swift in Sources */,
 				C928B9152A929E0000694A95 /* AppDelegate.swift in Sources */,
 				C90E963E2A93BAAF00998E37 /* BalanceView.swift in Sources */,
@@ -327,6 +326,7 @@
 				C928B92C2A92A16500694A95 /* HomeViewController.swift in Sources */,
 				C93B841F2A952DF000D82E31 /* StockCardView.swift in Sources */,
 				C928B9342A92A60200694A95 /* TabbarViewController.swift in Sources */,
+				C98074D52A97C068000F7D4B /* HomeHeaderTableView.swift in Sources */,
 				C90E963A2A93AEB700998E37 /* HeaderView.swift in Sources */,
 				C90E96512A93E10000998E37 /* UIView+Glow.swift in Sources */,
 				C928B93E2A92C0B300694A95 /* TabbarItem.swift in Sources */,

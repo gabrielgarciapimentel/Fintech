@@ -13,6 +13,14 @@ class TabbarViewController: TabbarController {
         
         applyViewCode()
     }
+    
+    private func hideNavigationBarLine(_ navigationBar: UINavigationBar) {
+        let img = UIImage()
+        navigationBar.shadowImage = img
+        navigationBar.setBackgroundImage(img, for: .default)
+        navigationBar.isTranslucent = false
+        navigationBar.isHidden = true
+    }
 }
 
 // MARK: - View Code implementation
@@ -31,6 +39,7 @@ extension TabbarViewController: ViewCodeProtocol {
         let moreNC = UINavigationController(rootViewController: HomeViewController())
         let withdrawNC = UINavigationController(rootViewController: TransactionViewController())
         let walletTabNC = UINavigationController(rootViewController: HomeViewController())
+        hideNavigationBarLine(homeNC.navigationBar)
         
         setTabBar(items: [homeTab, transactionTab, moreTab, withdrawTab, walletTab])
         viewControllers = [homeNC, transactionNC, moreNC, withdrawNC, walletTabNC]

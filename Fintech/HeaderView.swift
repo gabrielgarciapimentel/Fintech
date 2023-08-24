@@ -44,7 +44,7 @@ extension HeaderView: ViewCodeProtocol {
     func setupConstraints() {
         NSLayoutConstraint.activate([
             imageIcon.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 2),
-            imageIcon.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: -10),
+            imageIcon.topAnchor.constraint(equalTo: topAnchor, constant: 20),
             imageIcon.widthAnchor.constraint(equalToConstant: 40),
             imageIcon.heightAnchor.constraint(equalToConstant: 40)
         ])
